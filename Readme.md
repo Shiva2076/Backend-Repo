@@ -1,6 +1,32 @@
-you have to clone the repo with git clone URL
-you have to create .env file with MONGO_URI=your_mongo_URI
+Installation
+
+Clone the repository
+bashgit clone https://github.com/yourusername/activity-booking-api.git
+cd activity-booking-api
+
+Install dependencies
+bashnpm install
+
+
+Environment Variables
+
+Create a .env file in the root directory with the following variables:
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-then you have to run the command in tghe terminal npm install
-then run command npm start
-so now you goes to live and check
+PORT=5000
+
+Replace your_mongodb_connection_string with your MongoDB connection URI
+Replace your_jwt_secret with a secure random string for JWT token generation
+
+
+
+Running the Application
+
+Start the server
+bashnpm start
+For development with automatic restart:
+bashnpm run dev
+
+Access the API
+Once the server is running, you can access the API at:
+http://localhost:5000

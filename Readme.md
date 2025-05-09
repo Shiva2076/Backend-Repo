@@ -5,7 +5,7 @@ bashgit clone https://github.com/yourusername/activity-booking-api.git
 cd activity-booking-api
 
 Install dependencies
-bashnpm install
+bash npm install
 
 
 Environment Variables

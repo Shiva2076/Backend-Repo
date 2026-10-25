@@ -6,8 +6,7 @@ public:
         if(c <0 || c>=n){
             return INT_MAX/2;
         }
-
-        if(r==m-1){
+        if(r == m-1){
             return matrix[r][c];
         }
         if(dp[r][c]!=INT_MAX)

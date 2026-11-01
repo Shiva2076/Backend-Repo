@@ -4,7 +4,6 @@ public:
         unordered_map<int,int>lost_map;
         for(int i=0;i<matches.size();i++){
             int loser=matches[i][1];
-
             lost_map[loser]++;
         }
 
@@ -17,7 +16,7 @@ public:
 
             if(lost_map.find(winner)==lost_map.end()){
                 not_lost.push_back(winner);
-                lost_map[winner]=2;
+                lost_map[winner]=9;
             }
 
             if(lost_map[loser]==1){

@@ -16,7 +16,7 @@ public:
 
             if(lost_map.find(winner)==lost_map.end()){
                 not_lost.push_back(winner);
-                lost_map[winner]=9;
+                lost_map[winner]=0;
             }
 
             if(lost_map[loser]==1){
